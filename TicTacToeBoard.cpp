@@ -76,11 +76,12 @@ Piece TicTacToeBoard::getWinner()
 {
   for (int i = 0; i < BOARDSIZE; i++){
     for (int j = 0; j < BOARDSIZE; j++){
-      if (BOARDSIZE[i][j] == X){
+      if (board[i][j] == X){
         return X;
-      }else if(BOARDSIZE[i][j] == O){
+      }else if(board[i][j] == O){
         return O;
       }
     }
     return Invalid;
   }
+}
