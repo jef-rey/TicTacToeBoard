@@ -21,4 +21,7 @@ TEST(TicTacToeBoardTest, unitTestName)
 }
 */
 
-
+TEST(TicTacToeBoardTest, testToggleTurn){
+  TicTacToeBoard X;
+  ASSERT_TRUE(X); 
+}
