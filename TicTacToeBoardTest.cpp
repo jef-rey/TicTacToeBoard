@@ -26,3 +26,16 @@ TEST(TicTacToeBoardTest, testToggleTurnX){
   ASSERT_EQ(test.toggleTurn(), O);
 }
 
+TEST(TicTacToeBoardTest, testToggleTurnO){
+  TicTacToeBoard test;
+  test.toggleTurn();
+  ASSERT_EQ(test.toggleTurn(), X);
+}
+
+TEST(TicTacToeBoardTest, testPlacePiece){
+  TicTacToeBoard test;
+  test.placePiece(0,0);
+  ASSERT_EQ(test.placePiece(0,0), X);
+}
+
+
