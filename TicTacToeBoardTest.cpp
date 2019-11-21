@@ -57,5 +57,5 @@ TEST(TicTacToeBoard, testGetWinner){
   test.placePiece(1,1); // x
   test.placePiece(0,2); // o
   test.placePiece(2,2); // x <-- win
-  ASSERT_EQ(test.getWiner(), X);
+  ASSERT_EQ(test.getWinner(), X);
 }
