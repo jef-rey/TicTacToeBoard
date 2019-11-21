@@ -39,3 +39,10 @@ TEST(TicTacToeBoardTest, testPlacePiece){
 }
 
 
+TEST(TicTacToeBoardTest, testGetPiece){
+  TicTacToeBoard test;
+  test.placePiece(0,0);
+  ASSERT_EQ(test.getPiece(0,0), X);
+}
+
+
