@@ -38,6 +38,11 @@ TEST(TicTacToeBoardTest, testPlacePiece){
   ASSERT_EQ(test.placePiece(0,0), X);
 }
 
+TEST(TicTacToeBoardTest, placeNotValid){
+  TicTacToeBoard test;
+  test.placePiece(0,0);
+  ASSERT_EQ(test.placePiece(0,0), Invalid);
+}
 
 TEST(TicTacToeBoardTest, testGetPiece){
   TicTacToeBoard test;
