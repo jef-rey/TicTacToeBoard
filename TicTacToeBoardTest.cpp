@@ -21,8 +21,8 @@ TEST(TicTacToeBoardTest, unitTestName)
 }
 */
 
-//TEST(TicTacToeBoardTest, testToggleTurn){
-//  TicTacToeBoard X;
-//  ASSERT_TRUE(X); 
-//  ASSERT_FALSE(Y);
-//}
+TEST(TicTacToeBoardTest, testToggleTurnX){
+  TicTacToeBoard test;
+  ASSERT_EQ(test.toggleTurn(), O);
+}
+
