@@ -45,4 +45,12 @@ TEST(TicTacToeBoardTest, testGetPiece){
   ASSERT_EQ(test.getPiece(0,0), X);
 }
 
-
+TEST(TicTacToeBoard, testGetWinner){
+  TicTacToeBoard, test;
+  test.placePiece(0,0); // x
+  test.placePiece(1,0); // o
+  test.placePiece(1,1); // x
+  test.placePiece(0,2); // o
+  test.placePiece(2,2); // x <-- win
+  ASSERT_EQ(test.getWiner(), X);
+}
