@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/jef-rey/TicTacToeBoard.svg?branch=master)](https://travis-ci.org/jef-rey/TicTacToeBoard)
+
+[![Coverage Status](https://coveralls.io/repos/github/jef-rey/TicTacToeBoard/badge.svg?branch=master)](https://coveralls.io/github/jef-rey/TicTacToeBoard?branch=master)
+
 # TicTacToeBoard
 
 ## Associated Enumerated Types
