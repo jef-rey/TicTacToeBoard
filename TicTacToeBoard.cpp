@@ -73,7 +73,7 @@ Piece TicTacToeBoard::getPiece(int row, int column)
   }else if (board[row][column] == X){
     return X;
   }else if (board[row][column] == O){
-    return 0;
+    return O;
   }
   
   //return board[row][column];
