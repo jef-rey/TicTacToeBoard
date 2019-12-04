@@ -83,11 +83,11 @@ Piece TicTacToeBoard::getWinner()
       return board[1][i];
     }
   }
-  if (board[1][1] != Blank && (board[0][0] == board[1][1] == board[2][2])){ 
+  if (board[1][1] != Blank && (board[0][0] == board[1][1]) && (board[0][0] == board[2][2])){ 
     return board[1][1];
   }
 
-  if (board[1][1] != Blank && (board[2][0] == board[1][1] == board[0][2])){ 
+  if (board[1][1] != Blank && (board[2][0] == board[1][1]) && (board[0][0] == board[0][2])){ 
     return board[1][1];
   }
 }
