@@ -101,11 +101,11 @@ TEST(TicTacToeBoardTest, testGetWinnerX_diag2){
   /*
    *        0       1       2
    *  
-   *  0     x   |   o    |
+   *  0         |   o    | x
    *       --------------------
    *  1     o   |   x    |      
    *       --------------------
-   *  2        |       |   x
+   *  2     x   |        |    
    *
    *
    */

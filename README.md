@@ -2,6 +2,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/jef-rey/TicTacToeBoard/badge.svg?branch=master)](https://coveralls.io/github/jef-rey/TicTacToeBoard?branch=master)
 
+
 # TicTacToeBoard
 
 ## Associated Enumerated Types
