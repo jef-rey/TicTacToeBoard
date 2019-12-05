@@ -62,6 +62,12 @@ TEST(TicTacToeBoardTest, testGetPieceO){
   ASSERT_EQ(test.getPiece(0,1), O);
 }
 
+TEST(TicTacToeBoardTest, testGetPiece_invalid){
+  TicTacToeBoard test;
+  test.placePiece(0,0);
+  test.placePiece(0,1);
+  ASSERT_EQ(test.getPiece(4,1), Invalid );
+}
 TEST(TicTacToeBoardTest, testGetWinnerX_diag){
   TicTacToeBoard test;
   test.placePiece(0,0); // x
