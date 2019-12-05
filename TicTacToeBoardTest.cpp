@@ -113,6 +113,27 @@ TEST(TicTacToeBoardTest, testGetWinnerX_col){
 }
 
 
+TEST(TicTacToeBoardTest, testGetWinnerX_row){
+  TicTacToeBoard test;
+  test.placePiece(0,0); // x
+  test.placePiece(2,0); // o
+  test.placePiece(0,1); // x
+  test.placePiece(2,2); // o
+  test.placePiece(0,2); // x <-- win
+  ASSERT_EQ(test.getWinner(), X);
+  /*
+   *        0       1       2
+   *  
+   *  0     x   |   x    |  x
+   *       --------------------
+   *  1         |        |      
+   *       --------------------
+   *  2     o   |        |  o
+   *
+   *
+   */
+}
+
 TEST(TicTacToeBoardTest, testGetWinner_invalid){
   TicTacToeBoard test;
   test.placePiece(0,0); // x
